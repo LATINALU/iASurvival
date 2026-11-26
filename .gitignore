@@ -1,0 +1,9 @@
+node_modules/
+servidor/datos/
+build/
+visor/.godot/
+*.tmp
+.env
+agentes/memoria-*.json
+agentes/node_modules/
+servidor/nativo/target/

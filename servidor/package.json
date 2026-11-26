@@ -1,0 +1,27 @@
+{
+  "name": "iasurvival-servidor",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "iASurvival: motor de la simulación de colonias con IA (TypeScript sobre TxNucleo) + observador WebSocket + guardado.",
+  "engines": {
+    "node": ">=23.6"
+  },
+  "scripts": {
+    "servidor": "node src/principal.ts",
+    "mundo:simular": "node herramientas/simular.ts",
+    "test": "node --test test/*.test.ts",
+    "tipos": "tsc -p .",
+    "empaquetar": "node herramientas/empaquetar.ts"
+  },
+  "dependencies": {
+    "txnucleo": "file:../../TxNucleo",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/ws": "^8.5.13",
+    "esbuild": "^0.28.2",
+    "typescript": "^5.7.0"
+  }
+}
